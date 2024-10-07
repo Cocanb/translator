@@ -1,0 +1,25 @@
+{
+  "name": "translator",
+  "version": "1.0.0",
+  "repository": {
+    "url": "git+https://github.com/Cocanb/translator.git"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "prebuild": "npm run format",
+    "build": "webpack --mode=production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "gh-pages": "^6.1.1",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.0",
+    "prettier": "^3.3.3",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.2",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
